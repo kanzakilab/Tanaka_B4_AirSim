@@ -5,7 +5,7 @@
   modifications to suit mavlink headers
  */
 /*
- * Copyright (c) 1995 - 2001 Kungliga Tekniska H�gskolan
+ * Copyright (c) 1995 - 2001 Kungliga Tekniska H gskolan
  * (Royal Institute of Technology, Stockholm, Sweden).
  * All rights reserved.
  * 
