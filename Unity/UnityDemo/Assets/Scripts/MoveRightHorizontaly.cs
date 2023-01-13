@@ -12,6 +12,7 @@ namespace AirSimUnity
         private float height;
         private float inclination;
         private float target = 20.0f;
+        private int framecount = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -21,24 +22,31 @@ namespace AirSimUnity
         }
 
         void FixedUpdate()
-        {
-            height = this.gameObject.transform.position.y;
-            if((height - target) < -5.0f)
+        {   
+            if(framecount >= 3)
             {
-                inclination -= 0.02f;
-            }else if((height - target) > 1.0f) { 
-                inclination += 0.02f;
+                height = this.gameObject.transform.position.y;
+                if((height - target) < -5.0f)
+                {
+                    inclination -= 0.02f;
+                }else if((height - target) > 1.0f) { 
+                    inclination += 0.02f;
+                }
+                framecount = -1;
             }
+            
+
             if (inclination < 0.0f)
             {
                 inclination = 0.0f;
             }else if (inclination > 1.0f) {
                 inclination = 1.0f;
             }
-            if (Math.Abs(target - height) < 1.5f)
-            {
-                Debug.Log(inclination);
-            }
+            //if (Math.Abs(target - height) < 1.5f)
+            //{
+            //    Debug.Log(inclination);
+            //}
+            framecount++;
         }
 
         private void LateUpdate()
