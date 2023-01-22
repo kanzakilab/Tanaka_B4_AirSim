@@ -13,7 +13,7 @@ namespace AirSimUnity
         private float currentheight;
         private float inclination;
         private float target = 20.0f;
-        private float margin1 = 2.0f; // 1. まずはここから出ないように
+        private float margin1 = 2.6f; // 1. まずはここから出ないように
         private float di = 0.001f;
 
         // Start is called before the first frame update
@@ -38,6 +38,7 @@ namespace AirSimUnity
                 if ((currentheight - target) > margin1)
                 {
                     inclination = 0.0f;
+                    Debug.Log(currentheight-height);
                 }
                 else if ((target - currentheight) > margin1)
                 {
