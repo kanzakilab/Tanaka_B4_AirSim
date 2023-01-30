@@ -1213,7 +1213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4943211950449684, guid: f63bf11bc2a9a7146a4375d511e1425c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 207
+      value: 192
       objectReference: {fileID: 0}
     - target: {fileID: 4943211950449684, guid: f63bf11bc2a9a7146a4375d511e1425c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1301,16 +1301,43 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132490914}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cde92a29b1c484741a37a8561c83c048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OtherDrone: {fileID: 1447002360}
-  ap_time: 10
-  sta_time: 30
+  ap_time: 27
+  sta_time: 10
   direction: 1
-  power: 0.75
+  power: 0.74
+--- !u!114 &132490919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132490914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421d234538e8d0943aef17a6934ba41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherDrone: {fileID: 1447002360}
+  direction: 1
+  power: 0.7
+--- !u!114 &132490920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132490914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29b1b9e831732e4fb765db2369b3f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &142585434
 GameObject:
   m_ObjectHideFlags: 0
@@ -5401,13 +5428,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017540978}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -200, y: 150, z: 150}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -200, y: 150, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1038801954
 GameObject:
   m_ObjectHideFlags: 0
@@ -7859,16 +7886,43 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447002360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cde92a29b1c484741a37a8561c83c048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OtherDrone: {fileID: 132490914}
-  ap_time: 27
-  sta_time: 10
+  ap_time: 10
+  sta_time: 30
   direction: -1
-  power: 0.75
+  power: 0.8
+--- !u!114 &1447002365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447002360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421d234538e8d0943aef17a6934ba41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherDrone: {fileID: 132490914}
+  direction: -1
+  power: 0.7
+--- !u!114 &1447002366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447002360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196dcd37728704140b6e7fed314191f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1450550447
 GameObject:
   m_ObjectHideFlags: 0
