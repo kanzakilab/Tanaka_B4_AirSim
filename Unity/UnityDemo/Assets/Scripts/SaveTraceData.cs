@@ -16,7 +16,7 @@ public class SaveTraceData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sw = new StreamWriter(@"C:\Users\jetst\Downloads\SaveData5.csv", true, Encoding.GetEncoding("Shift_JIS"));
+        sw = new StreamWriter(@"C:\Users\jetst\Downloads\SaveDataNB.csv", true, Encoding.GetEncoding("Shift_JIS"));
         string[] s1 = { "Frame", "x", "y", "z" };
         string s2 = string.Join(",", s1);
         sw.WriteLine(s2);
